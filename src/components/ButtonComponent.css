@@ -1,0 +1,10 @@
+nav button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+nav button:hover{
+    transform: scale(1.05);
+    transition: 100ms;
+}

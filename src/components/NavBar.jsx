@@ -1,0 +1,23 @@
+import ButtonComponent from "./ButtonComponent.jsx"
+import LogoComponent from "./LogoComponent.jsx"
+import CartWidget from "./CartWidget.jsx"
+import "./NavBar.css"
+import { Link } from "react-router-dom"
+export default function tituloComponente() {
+  return (
+    <>
+      <nav>
+        <Link to="/"><LogoComponent/></Link>
+        <Link to="/categoria/aventura"><ButtonComponent texto = "Aventura"/></Link>
+        <Link to="/categoria/shooter"><ButtonComponent texto = "Shooter"/></Link>
+        <Link to="/categoria/deportes"><ButtonComponent texto = "Deportes"/></Link>
+        <Link to="/categoria/simulacion"><ButtonComponent texto = "Simulacion"/></Link>
+        
+        
+        <CartWidget/>
+      </nav>
+        
+    </>
+  )
+}
+
