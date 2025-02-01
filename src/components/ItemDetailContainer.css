@@ -1,0 +1,16 @@
+.productDetail{
+    background-color:#0D3F7C ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.productDetail h2{
+    font-size: 3rem;
+}
+.productDetail h3{
+    font-size: 4rem;
+}
+.productDetail img{
+    width: 25%;
+}
