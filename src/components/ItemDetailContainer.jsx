@@ -1,27 +1,49 @@
-import { useEffect, useState } from "react"
-import {buscarProducto} from "./async"
+import { useContext, useEffect, useState } from "react"
+import { buscarProducto } from "./async"
 import { useParams } from "react-router-dom"
 import "./ItemDetailContainer.css"
-import ButtonComponent from "./ButtonComponent"
-export default function ProductDetail() {
-  let {id} = useParams()
+import { cartContext, CartProvider } from "../context/CartContext"
+export default function ItemDetailContainer() {
+  const [cart, setCart, addItem] = useContext(cartContext)
+  let { id } = useParams()
   let [product, setProduct] = useState({})
-
   useEffect(() => {
     const result = buscarProducto(Number(id))
-    setProduct(result) 
-  },[id])
+    setProduct(result)
+  }, [id])
+
+  const handleClick = () =>{
+    if(product.stock === 0){
+      console.log("sin stock")
+    }else{
+      addItem(product)
+      product.stock--
+      console.log(cart)
+    }
+    
+    
+  }
   return (
     <>
-    <article className="productDetail">
-        
-        <h2>{product?.nombre}</h2>
-        <img src={product?.rutaimg} alt="" />
-        <p>{product?.console} || {product?.categoria}</p>
-        <p>Stock disponible: {product?.stock}</p>
-        <h3>${product?.precio}</h3>
-        <ButtonComponent texto = "Agregar al Carrito"/>
-    </article>
+      <article className="productDetail">
+        <div className="portadaJuego">
+          <h2>{product?.nombre}</h2>
+          <img src={product?.rutaimg} alt="" />
+        </div>
+        <div className="infoProducto">
+          <p>{product?.console} || {product?.categoria}</p>
+          <p>Stock disponible: {product?.stock}</p>
+          <h3>${product?.precio}</h3>
+          <div className="agregarAlCarrito">
+            <button>+</button>
+            <input type="text" name="" id="" />
+            <button>-</button>
+            <button onClick={handleClick}>Agregar al Carrito</button>
+          </div>
+        </div>
+
+
+      </article>
     </>
   )
 }

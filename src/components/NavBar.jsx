@@ -3,6 +3,7 @@ import LogoComponent from "./LogoComponent.jsx"
 import CartWidget from "./CartWidget.jsx"
 import "./NavBar.css"
 import { Link } from "react-router-dom"
+import { CartProvider } from "../context/CartContext.jsx"
 export default function tituloComponente() {
   return (
     <>
@@ -12,7 +13,9 @@ export default function tituloComponente() {
         <Link to="/categoria/shooter"><ButtonComponent texto = "Shooter"/></Link>
         <Link to="/categoria/deportes"><ButtonComponent texto = "Deportes"/></Link>
         <Link to="/categoria/simulacion"><ButtonComponent texto = "Simulacion"/></Link>
-        <CartWidget/>
+        <CartProvider>
+          <CartWidget/>
+        </CartProvider>
       </nav>
         
     </>

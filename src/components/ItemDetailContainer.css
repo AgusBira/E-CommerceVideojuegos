@@ -1,8 +1,10 @@
 .productDetail{
+    padding: 20px;
     background-color:#0D3F7C ;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     color: white;
 }
 .productDetail h2{
@@ -13,4 +15,28 @@
 }
 .productDetail img{
     width: 25%;
+}
+.productDetail .agregarAlCarrito {
+    display: flex;
+    gap: 10px;
+}
+.productDetail .portadaJuego{
+    width: 500px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.productDetail .portadaJuego img{
+    width: 90%;
+
+}
+.productDetail .infoProducto{
+    width: 600px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
