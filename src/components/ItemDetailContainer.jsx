@@ -3,13 +3,13 @@ import { buscarProducto } from "./async"
 import { useParams } from "react-router-dom"
 import "./ItemDetailContainer.css"
 import { cartContext, CartProvider } from "../context/CartContext"
+import { getProducts } from "../firebase/firebase"
 export default function ItemDetailContainer() {
   const [cart, setCart, addItem] = useContext(cartContext)
   let { id } = useParams()
   let [product, setProduct] = useState({})
   useEffect(() => {
-    const result = buscarProducto(Number(id))
-    setProduct(result)
+    getProducts().then((products) => setProduct(buscarProducto(id,products)))
   }, [id])
 
   const handleClick = () =>{
