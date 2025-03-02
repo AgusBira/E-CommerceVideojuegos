@@ -6,7 +6,7 @@ export default function cartWidget (){
     const [cart,setCart] = useContext(cartContext)
     return(
         <>
-            <a href="">🛒 {cart.length}</a>
+            <button href="">🛒 {cart.length}</button>
         </>
     )
 }

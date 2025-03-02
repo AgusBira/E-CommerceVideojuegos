@@ -13,15 +13,7 @@ export default function ItemDetailContainer() {
   }, [id])
 
   const handleClick = () =>{
-    if(product.stock === 0){
-      console.log("sin stock")
-    }else{
       addItem(product)
-      product.stock--
-      console.log(cart)
-    }
-    
-    
   }
   return (
     <>
