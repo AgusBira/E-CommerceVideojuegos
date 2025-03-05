@@ -7,9 +7,9 @@ export default function Cart (){
     const [cart, setCart, addItem] = useContext(cartContext)
     return(
         <>
-          <div className="cartContainer">
+            <div className="cartContainer">
                   {cart.map(product => (<CartItem key={product.id} product={product} />))}
-              </div>
+            </div>
         </>
     )
 }
