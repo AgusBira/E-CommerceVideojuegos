@@ -5,6 +5,9 @@ import { cartContext } from "../context/CartContext";
 export default function CartItem({ product }) {
 
     const [cart,SetCart,addItem,removeItem] = useContext(cartContext)
+    function handleClick(){
+        removeItem(product)
+    }
     return (
         <>
             <article article className="cartItem">
@@ -13,8 +16,8 @@ export default function CartItem({ product }) {
                 </div>
                 <h4>{product.nombre}</h4>
                 <p>{product.unidades}</p>
-                <h3>{product.precio}</h3>
-                <button>Eliminar</button>
+                <h3>{product.precio*product.unidades}</h3>
+                <button onClick={handleClick}>Eliminar</button>
             </article>
         </>
     );

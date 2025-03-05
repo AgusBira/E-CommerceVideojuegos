@@ -15,9 +15,7 @@ export default function ItemDetailContainer() {
   }, [id])
 
   const handleClick = () => {
-   
-      addItem(product)
-      
+    addItem(product, count)
   }
 
   function increment() {
