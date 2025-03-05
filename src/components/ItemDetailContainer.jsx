@@ -6,14 +6,32 @@ import { cartContext, CartProvider } from "../context/CartContext"
 import { getProducts } from "../firebase/firebase"
 export default function ItemDetailContainer() {
   const [cart, setCart, addItem] = useContext(cartContext)
+  let [stock, setStock] = useState(5)
+  let [count, setCount] = useState(0)
   let { id } = useParams()
   let [product, setProduct] = useState({})
   useEffect(() => {
-    getProducts().then((products) => setProduct(buscarProducto(id,products)))
+    getProducts().then((products) => setProduct(buscarProducto(id, products)))
   }, [id])
 
-  const handleClick = () =>{
+  const handleClick = () => {
+   
       addItem(product)
+      
+  }
+
+  function increment() {
+    if (count < 5) {
+      setCount(prevCount => prevCount + 1)
+      setStock(prevStock => prevStock - 1)
+    }
+
+  }
+  function decrement() {
+    if (count > 0) {
+      setCount(prevCount => prevCount - 1)
+      setStock(prevStock => prevStock + 1)
+    }
   }
   return (
     <>
@@ -24,12 +42,14 @@ export default function ItemDetailContainer() {
         </div>
         <div className="infoProducto">
           <p>{product?.console} || {product?.categoria}</p>
-          <p>Stock disponible: {product?.stock}</p>
+          <p>Stock disponible: {stock}</p>
           <h3>${product?.precio}</h3>
+          <div className="ItemCounter">
+            <button onClick={decrement}>-</button>
+            <input type="text" value={count} />
+            <button onClick={increment}>+</button>
+          </div>
           <div className="agregarAlCarrito">
-            <button>+</button>
-            <input type="text" name="" id="" />
-            <button>-</button>
             <button onClick={handleClick}>Agregar al Carrito</button>
           </div>
         </div>

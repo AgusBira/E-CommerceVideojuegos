@@ -7,14 +7,11 @@ export function CartProvider({children}){
     
 
     const addItem = (item) =>{
-        if(!cart.includes(item)){
+        if (cart.indexOf(item) === -1) {
             SetCart([...cart,item])
-            item.unidades = 1
-        }else{
-            if(item.unidades < item.stock){
-                item.unidades++
-            }
         }
+        console.log(cart)
+            
         
     }
     const removeItem = (item) =>{
