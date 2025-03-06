@@ -4,7 +4,6 @@ export const cartContext = createContext()
 
 export function CartProvider({children}){
     const [cart,SetCart] = useState([])
-    
     const addItem = (item,units) =>{
         if(units === 0){
             alert("no se agrego nada , por favor indique la cantidad")

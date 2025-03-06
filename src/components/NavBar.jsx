@@ -13,9 +13,7 @@ export default function tituloComponente() {
         <Link to="/categoria/shooter"><ButtonComponent texto = "Shooter"/></Link>
         <Link to="/categoria/deportes"><ButtonComponent texto = "Deportes"/></Link>
         <Link to="/categoria/simulacion"><ButtonComponent texto = "Simulacion"/></Link>
-        <CartProvider>
-          <Link to= "/cart"><CartWidget/></Link>
-        </CartProvider>
+        <Link to= "/cart"><CartWidget/></Link>
       </nav>
         
     </>

@@ -6,12 +6,15 @@ import { cartContext, CartProvider } from "../context/CartContext"
 import { getProducts } from "../firebase/firebase"
 export default function ItemDetailContainer() {
   const [cart, setCart, addItem] = useContext(cartContext)
+  let [loading, setLoading] = useState(true)
   let [count, setCount] = useState(0)
   let { id } = useParams()
   let [product, setProduct] = useState({})
-  /* let [stock, setStock] = useState(product.stock) */
   useEffect(() => {
-    getProducts().then((products) => setProduct(buscarProducto(id, products)))
+    getProducts().then((products) => {
+      setProduct(buscarProducto(id, products))
+      setLoading(false)
+    })
   }, [id])
 
   const handleClick = () => {
@@ -33,6 +36,7 @@ export default function ItemDetailContainer() {
   }
   return (
     <>
+      {loading ? <h2>Cargando...</h2> : 
       <article className="productDetail">
         <div className="portadaJuego">
           <h2>{product?.nombre}</h2>
@@ -51,9 +55,8 @@ export default function ItemDetailContainer() {
             <button onClick={handleClick}>Agregar al Carrito</button>
           </div>
         </div>
+      </article>}
 
-
-      </article>
     </>
   )
 }

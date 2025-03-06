@@ -9,19 +9,27 @@ export default function ItemListContainer(){
 
 let {catId} = useParams()
 let [products, setProducts] = useState([])
+let [loading, setLoading] = useState(true)
 useEffect(()=>{
     if(!catId){
-        getProducts().then((products) => setProducts(products))
+        getProducts().then((products) => {
+            setProducts(products)
+            setLoading(false)
+        })
     }else{
-        getProducts().then((products) => setProducts(filtroCategorias(catId,products)))
+        getProducts().then((products) => {
+            setProducts(filtroCategorias(catId,products))
+            setLoading(false)
+        })
     }
 },[catId])
 
    return(
     <>
-    <div className="container">
+    {loading ? <h3>Cargando...</h3> : <div className="container">
         {products.map(product => (<ItemCard key={product.id} product={product} />))}
-    </div>
+    </div>}
+    
     </> 
    )
    

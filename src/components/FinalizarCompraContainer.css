@@ -1,0 +1,24 @@
+.FinalizarCompraContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0D3F7C ;
+    height: 100px;
+    margin: 10px;
+    padding: 20px;
+}
+.FinalizarCompraContainer h2{
+    color: white;
+}
+.FinalizarCompraContainer button{
+    border: none;
+    height: 60%;
+    width: 150px;
+    background-color: rgb(235, 60, 255);
+    border-radius: 10px;
+    transition: 100ms;
+}
+.FinalizarCompraContainer button:hover{
+    transform: scale(1.1);
+    transition: 100ms;
+}
