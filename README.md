@@ -18,7 +18,7 @@
         - Visualizar el carrito con los productos seleccionados.
 
 ## Tecnologias
-    Las tecnologias que se utilizaron fueron **React Js** y **CSS3**. Tambien se utilizo firebase para almacenar en una base de datos los productos del 
+    Las tecnologias que se utilizaron fueron React Js y CSS3 Tambien se utilizo firebase para almacenar en una base de datos los productos del 
     catalogo.
 
 
