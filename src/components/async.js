@@ -8,3 +8,10 @@ export let buscarProducto = (id,productos) => {
 export let obtenerTodosLosJuegos = () =>{
     return juegos
 }
+export let sumaTotal =(cart) => {
+    if (cart.length != 0) {
+        let subtotales = cart.map(product => (product.unidades * product.precio))
+        return subtotales.reduce((acum, i) => acum + i)
+    } else {
+        return "0"
+    }}

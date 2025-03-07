@@ -8,13 +8,16 @@ export default function Cart (){
     const [cart, setCart, addItem] = useContext(cartContext)
     return(
         <>
-            <div className="cartContainer">
-                
-                  {cart.map(product => (<CartItem key={product.id} product={product} />))}
-            </div>
-            <div>
+        {cart.length === 0 ? <h2>Su carrito esta vacio!</h2> : 
+                <div className="cartContainer">
+                {cart.map(product => (<CartItem key={product.id} product={product} />))}
                 <FiinalizarCompraContainer/>
-            </div>
+                </div>
+                
+            }
+            
+                
+            
         </>
     )
 }

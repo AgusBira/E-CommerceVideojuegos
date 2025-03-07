@@ -1,0 +1,8 @@
+
+.checkoutForm{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 0 auto;
+    gap: 10px;
+}

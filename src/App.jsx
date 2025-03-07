@@ -1,5 +1,6 @@
 import NavBar from "./components/NavBar"
 import ItemListContainer from "./components/ItemListContainer"
+import CheckoutForm from "./components/CheckoutForm"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import ItemCard from "./components/ItemCard"
 import ItemDetailContainer from "./components/ItemDetailContainer"
@@ -17,6 +18,7 @@ export default function App() {
             <Route exact path="/categoria/:catId" element={<ItemListContainer />} />
             <Route exact path="/product/:id" element={<ItemDetailContainer />} />
             <Route exact path="/cart" element={<Cart/>} />
+            <Route exact path="/checkout" element={<CheckoutForm/>} />
           </Routes>
         </CartProvider>
       </BrowserRouter>
