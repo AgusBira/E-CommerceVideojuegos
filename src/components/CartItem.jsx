@@ -17,7 +17,7 @@ export default function CartItem({ product }) {
                 <h4>{product.nombre}</h4>
                 <p>{product.unidades}</p>
                 <h3>${product.precio*product.unidades}</h3>
-                <button onClick={handleClick}>Eliminar</button>
+                <button onClick={handleClick}>🗑️</button>
             </article>
         </>
     );

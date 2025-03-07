@@ -20,6 +20,19 @@
     display: flex;
     gap: 10px;
 }
+.productDetail .agregarAlCarrito button{
+    border: none;
+    width: 150px;
+    height: 50px;
+    background-color: #FF82F4;
+    border-radius: 10px;
+    transition: 100ms;
+}
+.productDetail .agregarAlCarrito button:hover{
+    transform: scale(1.1);
+    background-color: #f857ea;
+    transition: 100ms;
+}
 .productDetail .portadaJuego{
     width: 500px;
     height: 100vh;
@@ -39,4 +52,27 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+.ItemCounter{
+    display: flex;
+    gap: 10px;
+}
+.ItemCounter button{
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color:#FF82F4 ;
+    text-align: center;
+    transition: 100ms;
+}
+.ItemCounter button:hover{
+    background-color: #f857ea;
+    transform: scale(1.1);
+    transition: 100ms;
+}
+.ItemCounter button:active{
+    background-color: #f857ea;
+    transform: scale(1);
+    transition: 100ms;
 }

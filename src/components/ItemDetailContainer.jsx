@@ -51,9 +51,11 @@ export default function ItemDetailContainer() {
             <input type="text" value={count} />
             <button onClick={increment}>+</button>
           </div>
+          {cart.includes(product) ? <p>Se agrego al carrito!</p>: 
           <div className="agregarAlCarrito">
             <button onClick={handleClick}>Agregar al Carrito</button>
-          </div>
+          </div>}
+          
         </div>
       </article>}
 
