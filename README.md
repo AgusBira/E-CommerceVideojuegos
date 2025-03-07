@@ -1,4 +1,4 @@
-# Ecommerce de videojuegos
+# E-commerce de videojuegos
     E-Commerce de Videojuegos es una tienda en línea desarrollada con React.js, diseñada para ofrecer una experiencia fluida y dinámica en la compra de videojuegos. Los usuarios pueden explorar un amplio catálogo de juegos, agregar productos al carrito, realizar compras.
 
 ## Caracteristicas
@@ -11,6 +11,6 @@
         - Visualizar el carrito con los productos seleccionados.
 
 ## Tecnologias
-    Las tecnologias que se utilizaron fueron React Js y CSS3. Tambien se utilizo firebase para almacenar en una base de datos los productos del catalogo.
+    Las tecnologias que se utilizaron fueron **React Js** y **CSS3**. Tambien se utilizo firebase para almacenar en una base de datos los productos del catalogo.
 
 
