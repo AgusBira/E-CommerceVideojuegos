@@ -6,9 +6,14 @@ export default function ItemCard({product}) {
     return (
         <>
           <article className="itemcard">
-            <img src={product.rutaimg} alt="" />
-            <h4>{product.nombre}</h4> 
-            <Link to={`/product/${product.id}`}><ButtonComponent texto="Mas detalle"/></Link>
+            <div className="containerimg">
+              <img src={product.rutaimg} alt="" />
+            </div>
+            <div className="nombreproducto">
+              <h4>{product.nombre}</h4> 
+              <Link to={`/product/${product.id}`}><ButtonComponent texto="Mas detalle"/></Link>
+            </div>
+            
             
           </article>
         </>

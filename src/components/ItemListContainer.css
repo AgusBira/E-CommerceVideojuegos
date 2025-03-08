@@ -8,10 +8,10 @@
 
 .container{
     
-    background-color: #0D3F7C;
+    background-color:rgb(29, 26, 26);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     padding: 50px;
 }
