@@ -1,4 +1,4 @@
-import "./logoComponent.css"
+import "./LogoComponent.css"
 export default function LogoComponent (){
     return(
         <>
