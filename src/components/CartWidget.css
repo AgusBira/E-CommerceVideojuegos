@@ -1,5 +1,6 @@
-a{
-    text-decoration: none;
-    font-size: 3rem;
-    
+.cartwidget{
+    background-color: #121212;
+    font-size: 2rem;
+    border: none;
+    width: 100px;
 }

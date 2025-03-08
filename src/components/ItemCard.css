@@ -1,11 +1,12 @@
 .itemcard{
     background-color: rgb(66, 66, 66);
     width: 250px;
-    height: 500px;
+    height: 450px;
     display: grid;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
+    transition: all 0.3s ease-in-out;
 }
 .itemcard .containerimg{
-    background-color: red;
     width: 100%;
     height:300px;
 }
@@ -14,15 +15,15 @@
     object-fit: contain;
 }
 .itemcard h4{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
 }
 .itemcard button{
     width: 200px;
     height: 50px;
-    border: 2px solid white;
-    color: white;
-    background-color: rgb(66, 66, 66);
+    border: 2px solid #E0E0E0;
+    color: #E0E0E0;
+    background-color: rgb(86, 17, 85);
     border-radius: 10px;
     transition: 100ms;
 }
@@ -32,11 +33,14 @@
     box-shadow: 1px 1px 5px rgb(255, 90, 219);
 }
 .itemcard .nombreproducto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
-    background-color: rgb(66, 66, 66);
+    text-align: center;
+    background-color: rgb(86, 17, 85);
     height: 150px;
-    color: white;
+    color: #E0E0E0;
 } 
+.itemcard .nombreproducto h4{
+    margin-top: 5px;
+}

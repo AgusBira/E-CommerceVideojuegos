@@ -39,11 +39,11 @@ export default function ItemDetailContainer() {
       {loading ? <h2>Cargando...</h2> : 
       <article className="productDetail">
         <div className="portadaJuego">
-          <h2>{product?.nombre}</h2>
           <img src={product?.rutaimg} alt="" />
         </div>
         <div className="infoProducto">
-          <p>{product?.console} || {product?.categoria}</p>
+        <h2>{product?.nombre}</h2>
+          <p>{product?.console}</p>
           <p>Stock disponible: {product.stock}</p>
           <h3>${product?.precio}</h3>
           <div className="ItemCounter">
