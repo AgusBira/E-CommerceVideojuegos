@@ -6,6 +6,7 @@
     height: 150px;
     justify-content: space-between;
     align-items:center;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
 }
 
 .cartItem .containerImgCart{

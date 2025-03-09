@@ -17,7 +17,7 @@ export default function CheckoutForm({ product }) {
         <>
             <div className="formContainer">
                 <form className="checkoutForm" action="">
-                    <fieldset>Checkout</fieldset>
+                    <fieldset className="tituloCheck">Checkout</fieldset>
                     <label htmlFor="">Nombre:</label>
                     <input type="text" />
                     <label htmlFor="">Apellido:</label>

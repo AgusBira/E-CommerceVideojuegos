@@ -3,6 +3,27 @@
     display: flex;
     flex-direction: column;
     width: 600px;
+    height: 600px;
     margin: 0 auto;
-    gap: 10px;
+    gap: 30px;
+    padding: 20px;
+}
+.checkoutForm{
+    color: white;
+}
+.checkoutForm .tituloCheck{
+    font-size: 3rem;
+    border: none;
+}
+.checkoutForm input{
+    height: 50px;
+    font-size: 25px;
+}
+.checkoutForm label{
+    font-size: 1.5rem;
+}
+.formContainer{
+    border: 2px solid white;
+    width: 600px;
+    margin: 0 auto;
 }
