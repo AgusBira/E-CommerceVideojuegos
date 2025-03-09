@@ -11,11 +11,11 @@ export default function Cart (){
         {cart.length === 0 ? <h2>Su carrito esta vacio!</h2> : 
                 <div className="cartContainer">
                 {cart.map(product => (<CartItem key={product.id} product={product} />))}
-                <FiinalizarCompraContainer/>
+                
                 </div>
                 
             }
-            
+            <FiinalizarCompraContainer/>
                 
             
         </>

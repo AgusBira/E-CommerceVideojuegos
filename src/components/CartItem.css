@@ -1,7 +1,8 @@
 .cartItem{
     margin: 20px;
     display: flex;
-    background-color: #04BBEC;
+    background-color:#b6b6b6 ;
+    width: 600px;
     height: 150px;
     justify-content: space-between;
     align-items:center;

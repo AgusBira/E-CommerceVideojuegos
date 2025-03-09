@@ -8,10 +8,14 @@
     color: white;
 }
 .productDetail h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
+
 }
 .productDetail h3{
     font-size: 4rem;
+}
+.productDetail P{
+    color: rgb(157, 157, 157);
 }
 .productDetail img{
     width: 25%;
@@ -33,7 +37,7 @@
     transition: 100ms;
 }
 .productDetail .agregarAlCarrito button:hover{
-    transform: scale(1.1);
+    transform: scalex(1.1);
     background-color: #f857ea;
     transition: 100ms;
 }
