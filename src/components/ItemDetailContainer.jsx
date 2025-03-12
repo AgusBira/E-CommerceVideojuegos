@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom"
 import "./ItemDetailContainer.css"
 import { cartContext, CartProvider } from "../context/CartContext"
 import { getProducts } from "../firebase/firebase"
+import { Spinner } from 'reactstrap';
 export default function ItemDetailContainer() {
   const [cart, setCart, addItem] = useContext(cartContext)
   let [loading, setLoading] = useState(true)
@@ -36,7 +37,7 @@ export default function ItemDetailContainer() {
   }
   return (
     <>
-      {loading ? <h2 className="cargando">Cargando...</h2> : 
+      {loading ?  <Spinner color="light" className="spinner" ></Spinner> : 
       <article className="productDetail">
         <div className="portadaJuego">
           <img src={product?.rutaimg} alt="" />

@@ -4,14 +4,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
 }
-body{
-  background-color:#121212 ;
-}
+/* body{
+  background-color:#121212;
+} */
 .cargando{
   color: white;
   position: absolute;
   top: 50%;
-  left: 45%;
+  left: 45%   ;
 }

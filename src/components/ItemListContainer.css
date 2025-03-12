@@ -15,3 +15,13 @@
     gap: 50px;
     padding: 50px;
 }
+body{
+    background-color:#121212;
+  }
+
+.spinner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+}

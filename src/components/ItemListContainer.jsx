@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react"
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./ItemListContainer.css"
 import ItemCard from "./ItemCard"
 import { useParams } from "react-router-dom"
-import { filtroCategorias , obtenerTodosLosJuegos } from "./async"
+import { filtroCategorias } from "./async"
 import { getProducts } from "../firebase/firebase"
+import { Spinner } from 'reactstrap';
+
 export default function ItemListContainer(){
 
 
@@ -26,7 +29,7 @@ useEffect(()=>{
 
    return(
     <>
-    {loading ? <h3 className="cargando">Cargando...</h3> : <div className="container">
+    {loading ? <Spinner color="light" className="spinner" ></Spinner> : <div className="container">
         {products.map(product => (<ItemCard key={product.id} product={product} />))}
     </div>}
     

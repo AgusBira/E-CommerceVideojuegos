@@ -13,3 +13,8 @@ nav button:hover{
     transform:scaleX(1.05);
     transition: 100ms;
 }
+nav button:active{
+    background-color: white;
+    color: black;
+    transition: 100ms;
+}
