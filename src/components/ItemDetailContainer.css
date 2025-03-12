@@ -37,8 +37,13 @@
     transition: 100ms;
 }
 .productDetail .agregarAlCarrito button:hover{
-    transform: scalex(1.1);
+    transform: scalex(1.05);
+    
+    transition: 100ms;
+}
+.productDetail .agregarAlCarrito button:active{
     background-color: #f857ea;
+    color: black;
     transition: 100ms;
 }
 .productDetail .portadaJuego{

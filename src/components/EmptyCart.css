@@ -1,0 +1,15 @@
+.emptyCartContainer{
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 32%;
+}
+.emptyCartContainer h2{
+    color: white;
+}
+.emptyCartContainer p{
+    color: white;
+}
+.emptyCartContainer img{
+    width: 80%;
+}
