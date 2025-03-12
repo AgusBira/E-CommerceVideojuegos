@@ -36,7 +36,7 @@ export default function ItemDetailContainer() {
   }
   return (
     <>
-      {loading ? <h2>Cargando...</h2> : 
+      {loading ? <h2 className="cargando">Cargando...</h2> : 
       <article className="productDetail">
         <div className="portadaJuego">
           <img src={product?.rutaimg} alt="" />
@@ -51,11 +51,11 @@ export default function ItemDetailContainer() {
             <input type="text" value={count} />
             <button onClick={increment}>+</button>
           </div>
-          {cart.includes(product) ? <p>Se agrego al carrito!</p>: 
-          <div className="agregarAlCarrito">
+
+          {count >= 1 ?<div className="agregarAlCarrito">
             <button onClick={handleClick}>Agregar al Carrito</button>
-          </div>}
-          
+          </div>: <p>Indique la cantidad</p>
+          }
         </div>
       </article>}
 

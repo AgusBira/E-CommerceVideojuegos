@@ -1,12 +1,17 @@
 .cartItem{
     margin: 20px;
     display: flex;
-    background-color:#b6b6b6 ;
+    background-color: rgb(69, 15, 68);
     width: 600px;
     height: 150px;
     justify-content: space-between;
     align-items:center;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    color: white;
+}
+.cartItem h4{
+    font-size: 1.5rem;
 }
 
 .cartItem .containerImgCart{

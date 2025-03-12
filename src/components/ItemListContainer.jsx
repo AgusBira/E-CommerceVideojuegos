@@ -26,7 +26,7 @@ useEffect(()=>{
 
    return(
     <>
-    {loading ? <h3>Cargando...</h3> : <div className="container">
+    {loading ? <h3 className="cargando">Cargando...</h3> : <div className="container">
         {products.map(product => (<ItemCard key={product.id} product={product} />))}
     </div>}
     

@@ -9,3 +9,9 @@
 body{
   background-color:#121212 ;
 }
+.cargando{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
