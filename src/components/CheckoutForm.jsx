@@ -29,21 +29,21 @@ export default function CheckoutForm({ product }) {
                         placeholder="Ingrese su nombre"
                         {...register("nombre", { required: true, minLength: 2, maxLength: 20 })}
                     />
-                    {errors.nombre && <p>El nombre es obligatorio (2-20 caracteres)</p>}
+                    {errors.nombre && <p className="error">El nombre es obligatorio (2-20 caracteres)</p>}
                     <label htmlFor="">Email:</label>
                     <input
                         type="email"
                         placeholder="Ingrese su correo electrónico"
                         {...register("mail", { required: true})}
                     />
-                    {errors.mail && <p>Este campo es obligatorio</p>}
+                    {errors.mail && <p className="error">Este campo es obligatorio</p>}
                     <label htmlFor="">Telefono:</label>
                     <input
                         type="number"
                         placeholder="Ingrese su telefono"
                         {...register("telefono", { required: true, minLength:10, maxLength:10})}
                     />
-                    {errors.telefono && <p>Su numero no es valido (Ej: 1112345678)</p>}
+                    {errors.telefono && <p className="error">Su numero no es valido (Ej: 1112345678)</p>}
                     
                    
                     <h2>Valor total: ${sumaTotal(cart)}</h2>
