@@ -25,6 +25,7 @@ body{
   }
 
 .loadingCard{
+    
     width: 250px;
     height: 450px;
     background-color: #111010;
@@ -33,6 +34,7 @@ body{
     align-items: center;
 }
 .loadingCardContainer{
+    padding: 50px;
     display: flex;
     flex-wrap: wrap; 
     gap: 50px;
