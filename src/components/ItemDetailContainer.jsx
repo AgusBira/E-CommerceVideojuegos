@@ -36,7 +36,7 @@ export default function ItemDetailContainer() {
     }
   }
   return (
-    <>
+    <section>
       {loading ?  <Spinner color="light" className="spinner" ></Spinner> : 
       <article className="productDetail">
         <div className="portadaJuego">
@@ -60,7 +60,7 @@ export default function ItemDetailContainer() {
         </div>
       </article>}
 
-    </>
+    </section>
   )
 }
 
