@@ -10,7 +10,7 @@ const [cart] = useContext(cartContext)
   return (
     <>
       <nav>
-
+        
         <Link to="/categoria/aventura"><ButtonComponent texto = "Aventura"/></Link>
         <Link to="/categoria/shooter"><ButtonComponent texto = "Shooter"/></Link>
         <Link to="/categoria/deportes"><ButtonComponent texto = "Deportes"/></Link>

@@ -9,10 +9,7 @@
     justify-content: center;
     color: white;
 }
-.productDetail h2{
-    font-size: 2.5rem;
 
-}
 .productDetail h3{
     font-size: 4rem;
 }
@@ -59,13 +56,25 @@
 
 }
 .productDetail .infoProducto{
+    padding: 20px;
     width: 600px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;  
     align-items: center;
     gap: 10px;
 }
+
+.infoProducto-consolastock{
+    display: flex;
+    align-items: center ;
+    gap: 50px;
+}
+.productDetail .infoProducto h2{
+    font-size: 4rem;
+}
+
 .ItemCounter{
     display: flex;
     gap: 10px;
@@ -96,3 +105,8 @@
     transition: 100ms;
 }
 
+.console{
+    border: solid;
+    border-radius: 20px;
+    padding: 5px;
+}

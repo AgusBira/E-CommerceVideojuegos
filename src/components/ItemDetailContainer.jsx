@@ -43,9 +43,14 @@ export default function ItemDetailContainer() {
           <img src={product?.rutaimg} alt="" />
         </div>
         <div className="infoProducto">
-        <h2>{product?.nombre}</h2>
-          <p>{product?.console}</p>
-          <p>Stock disponible: {product.stock}</p>
+        <div >
+          <h2>{product?.nombre}</h2>
+            <div className="infoProducto-consolastock">
+              <p className="console">{product?.console}</p>
+              <p>Stock disponible: {product.stock}</p>
+            </div>
+        </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quam debitis ut eveniet eos, praesentium hic minima sequi molestias, unde aliquam minus nihil delectus quod numquam. Porro blanditiis voluptatum rem!</p>
           <h3>${product?.precio}</h3>
           <div className="ItemCounter">
             <button onClick={decrement}>-</button>

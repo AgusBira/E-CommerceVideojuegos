@@ -3,7 +3,6 @@
     width: 250px;
     height: 450px;
     display: grid;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
     transition: all 0.3s ease-in-out;
 }
 .itemcard .containerimg{
@@ -21,9 +20,9 @@
 .itemcard button{
     width: 200px;
     height: 50px;
-    border: 2px solid #E0E0E0;
+    border: solid black;
     color: #E0E0E0;
-    background-color: rgb(86, 17, 85);
+    background-color: #121212;
     border-radius: 10px;
     transition: 100ms;
 }
@@ -37,7 +36,7 @@
     grid-template-rows: 1fr 1fr;
     justify-content: center;
     text-align: center;
-    background-color: rgb(86, 17, 85);
+    background: linear-gradient( rgb(188, 72, 188),rgb(67, 10, 96),#121212);
     height: 150px;
     color: #E0E0E0;
 } 
