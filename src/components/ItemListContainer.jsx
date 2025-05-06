@@ -6,12 +6,14 @@ import { useParams } from "react-router-dom"
 import { filtroCategorias } from "./async"
 import { getProducts } from "../firebase/firebase"
 import { Skeleton } from "@mui/material";
+
 export default function ItemListContainer(){
 
 
 let {catId} = useParams()
 let [products, setProducts] = useState([])
 let [loading, setLoading] = useState(true)
+
 useEffect(()=>{
     if(!catId){
         getProducts().then((products) => {

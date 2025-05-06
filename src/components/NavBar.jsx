@@ -3,8 +3,10 @@ import LogoComponent from "./LogoComponent.jsx"
 import CartWidget from "./CartWidget.jsx"
 import "./NavBar.css"
 import { Link } from "react-router-dom"
-import { CartProvider } from "../context/CartContext.jsx"
+import { cartContext } from "../context/CartContext.jsx"
+import { useContext } from "react"
 export default function tituloComponente() {
+const [cart] = useContext(cartContext)
   return (
     <>
       <nav>
@@ -13,7 +15,7 @@ export default function tituloComponente() {
         <Link to="/categoria/shooter"><ButtonComponent texto = "Shooter"/></Link>
         <Link to="/categoria/deportes"><ButtonComponent texto = "Deportes"/></Link>
         <Link to="/categoria/simulacion"><ButtonComponent texto = "Simulacion"/></Link>
-        <Link to= "/cart"><CartWidget/></Link>
+        <Link className={cart.length === 0 ? "hidden" : ""} to= "/cart"><CartWidget/></Link>
       </nav>
         
     </>

@@ -9,3 +9,6 @@ nav{
 nav img{
     width: 5%;
 }
+.hidden {
+    display: none;
+  }
