@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Footer.css"
-export default function footer() {
+export default function Footer() {
   return (
     <footer>Hecho por <a>Agustin Birarelli</a></footer>
   )

@@ -7,7 +7,7 @@ import ItemDetailContainer from "./components/ItemDetailContainer"
 import { cartContext, CartProvider } from "./context/CartContext"
 import Cart from "./components/Cart"
 import Hero from "./components/Hero"
-import Footer from "./components/footer"
+import Footer from "./components/Footer"
 export default function App() {
 
   return (
