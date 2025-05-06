@@ -8,7 +8,7 @@ export default function tituloComponente() {
   return (
     <>
       <nav>
-        <Link to="/"><LogoComponent/></Link>
+
         <Link to="/categoria/aventura"><ButtonComponent texto = "Aventura"/></Link>
         <Link to="/categoria/shooter"><ButtonComponent texto = "Shooter"/></Link>
         <Link to="/categoria/deportes"><ButtonComponent texto = "Deportes"/></Link>

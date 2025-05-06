@@ -1,18 +1,11 @@
 nav button{
     width: 200px;
     height: 50px;
-    border: 2px rgb(135, 135, 135) solid;
-    border-radius: 10px;
-    background-color:rgb(29, 26, 26);
-    color: #E0E0E0;
-    font-size: 1rem;
-    transition: 100ms;
+    background-color:#121212;
+    border: none;
+    color: white;
 }
-nav button:hover{
-    border: 2px white solid;
-    transform:scaleX(1.05);
-    transition: 100ms;
-}
+
 nav button:active{
     background-color: white;
     color: black;
