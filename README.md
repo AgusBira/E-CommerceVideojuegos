@@ -1,6 +1,5 @@
-# E-commerce de videojuegos
- E-Commerce de Videojuegos es una tienda en línea desarrollada con React.js, diseñada para ofrecer una experiencia fluida y dinámica en la compra de 
-    
+# Coliseum: E-commerce de videojuegos
+ Coliseum es E-Commerce de Videojuegos desarrollada con React.js, diseñada para ofrecer una experiencia fluida y dinámica en la compra de 
  videojuegos. Los usuarios pueden explorar un amplio catálogo de juegos, agregar productos al carrito, realizar compras.
 
 ## Caracteristicas
@@ -19,6 +18,9 @@ Las funcionalidades principales que ofrece son:
 
 ## Tecnologias
 Las tecnologias que se utilizaron fueron React Js y CSS3 Tambien se utilizo firebase para almacenar en una base de datos los productos del 
-    catalogo.
+catalogo. Se utilizaron librerias como AOS js y Material UI para algunos efectos visuales. 
+
+## Como Probar
+El proyecto esta desplegado en vercel y se puede ingresar libremente: https://coliseum-mu.vercel.app/
 
 
