@@ -1,8 +1,8 @@
 footer{
     text-align: center;
-    color: white;
+    color: black;
 
 }
 footer a{
-    font:600;
+font-weight: 600;
 }

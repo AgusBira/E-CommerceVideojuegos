@@ -34,7 +34,7 @@ useEffect(()=>{
         
         Array.from({ length: 10 }).map(item => (
             <div className="loadingCard">
-                <Skeleton  sx={{ bgcolor: 'grey.900' }} variant="rectangular" width={250} height={300} />
+                <Skeleton  sx={{ bgcolor: 'grey.900' }} variant="rectangular" width={250} height={200} />
                 <Skeleton  sx={{ bgcolor: 'grey.900' }} height={50} width={190} />
                 <Skeleton  sx={{ bgcolor: 'grey.900' }} height={100} width={190} />
             </div>
