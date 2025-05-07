@@ -1,7 +1,18 @@
+.cart{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .cartContainer{
+    margin: 50px;
+    width: 800px;
+    min-height: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
-    background-color:#121212 ;
+    gap: 20px;
+    background-color:#D0D4C8;   
+
 }

@@ -1,14 +1,18 @@
 .cartItem{
-    margin: 20px;
+
     display: flex;
-    background-color: rgb(69, 15, 68);
-    width: 600px;
-    height: 150px;
+    background-color: rgb(58, 140, 196);
+    width: 700px;
+    height: 100px;
     justify-content: space-between;
     align-items:center;
     box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
-    border-radius: 10px;
-    color: white;
+    transition: 200ms;
+    color: black;
+}
+.cartItem:hover{
+    box-shadow: 6px 6px 0px black;
+    transition: 200ms;
 }
 .cartItem h4{
     font-size: 1.5rem;
@@ -31,6 +35,7 @@
 .cartItem button:hover{
     transform: scale(1.1);
     transition: 100ms;
+    
 }
 .cartItem button:active{
     transform:scale(1);

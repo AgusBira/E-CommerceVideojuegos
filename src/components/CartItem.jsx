@@ -8,6 +8,7 @@ export default function CartItem({ product }) {
     function handleClick(){
         removeItem(product)
     }
+
     return (
         <>
             <article article className="cartItem">
@@ -17,7 +18,8 @@ export default function CartItem({ product }) {
                 <h4>{product.nombre}</h4>
                 <p>{product.unidades}</p>
                 <h3>${product.precio*product.unidades}</h3>
-                <button onClick={handleClick}>🗑️</button>
+                <button onClick={handleClick}><img src="/trash.png" alt="" /></button>
+            
             </article>
         </>
     );

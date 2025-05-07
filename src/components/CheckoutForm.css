@@ -1,4 +1,10 @@
-
+.checkout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#D0D4C8; 
+}
 .checkoutForm{
     display: flex;
     flex-direction: column;
@@ -9,7 +15,7 @@
     padding: 20px;
 }
 .checkoutForm{
-    color: white;
+    color: black;
 }
 .checkoutForm .tituloCheck{
     font-size: 3rem;
@@ -48,4 +54,35 @@
 }
 .error{
     background-color:  rgba(255, 0, 0, 0.3);;
+}
+
+.compraRealizada{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.volverAlInicio{
+    text-decoration: none;
+    color: white;
+
+
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+.volverAlInicio p{
+    display: flex;
+    align-items: center;
+    background-color: #121212;
+    padding: 20px;
+    height: 100%;
+}
+
+.volverAlInicio:hover{
+    transform: scale(1.02);
+    color: white;
+    transition: 100ms;
 }
