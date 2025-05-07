@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 .itemcard{
     
     width: 250px;
@@ -41,6 +43,7 @@
     border: solid 2px #E0E0E0;
 }
 .itemcard .nombreproducto{
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,5 +53,8 @@
     color: black;
 }
 .itemcard .nombreproducto h4{
-    margin-top: 5px;
+    font-family: "Roboto", sans-serif;
+    font-style: 200;
+    text-shadow: 2px 2px 0px black;
+    color: white;
 }

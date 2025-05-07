@@ -1,26 +1,41 @@
 
-
+.containerProductDetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 .productDetail{
     padding: 20px;
-    background-color:#121212 ;
+background-color:#D0D4C8;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(86, 86, 86);
 }
 
+
 .productDetail h3{
-    font-size: 4rem;
+    font-size: 5rem;
+    margin: 0 auto;
 }
-.productDetail P{
-    color: rgb(157, 157, 157);
+.productDetail p{
+    color: rgb(75, 74, 74);
+}
+
+.productDetail .infoproducto-description{
+    width: 400px;
+
 }
 .productDetail img{
     width: 25%;
 }
 .productDetail .agregarAlCarrito {
-    display: flex;
+    margin: 0 auto;
+    text-align: center;
     gap: 10px;
     
 }
@@ -29,21 +44,24 @@
     width: 200px;
     height: 50px;
     margin-top: 20px;
-    background-color: #1212;
-    border: 2px solid white;
-    color: white;
+    background-color: rgba(36, 33, 7, 0.133);
+
+    color: black;
     border-radius: 10px;
     transition: 100ms;
 }
 .productDetail .agregarAlCarrito button:hover{
-    transform: scalex(1.05);
-    
+    transform: scale(1.05);
+    box-shadow: 4px 4px 0px black;
     transition: 100ms;
 }
 .productDetail .agregarAlCarrito button:active{
-    background-color: #f857ea;
+    box-shadow: 4px 4px 0px black;
+    transform: scale(1);
+    box-shadow: 2px 2px 0px black;
     color: black;
     transition: 100ms;
+    background-color: #39d5c3;
 }
 .productDetail .portadaJuego{
     width: 500px;
@@ -62,8 +80,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;  
-    align-items: center;
+    align-items: start;
     gap: 10px;
+
 }
 
 .infoProducto-consolastock{
@@ -71,13 +90,18 @@
     align-items: center ;
     gap: 50px;
 }
+
+.stock{
+    font-size: 1.5rem;
+}
 .productDetail .infoProducto h2{
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 .ItemCounter{
     display: flex;
     gap: 10px;
+    margin: 0 auto;
 }
 .ItemCounter input{
     font-size: 1.5rem;
@@ -88,25 +112,59 @@
     height: 50px;
     font-size:2rem;
     background-color: #1212;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid black;
+    color: black;
     border-radius: 50%;
     text-align: center;
     transition: 100ms;
 }
 .ItemCounter button:hover{
-    background-color: #f857ea;
     transform: scale(1.1);
+
     transition: 100ms;
 }
 .ItemCounter button:active{
-    background-color: #f857ea;
+    background-color: #39d5c3;
     transform: scale(1);
     transition: 100ms;
 }
+.ItemCounter input{
+    border: 1px solid black;
+    width: 100px;
+}
+.ItemCounter input:focus{
+    outline: none;
+    
 
+}
 .console{
     border: solid;
     border-radius: 20px;
     padding: 5px;
+}
+
+.imagenflecha{
+    margin: 50px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    cursor: pointer;
+    transition: 100ms;
+    border: none;
+
+}
+.imagenflecha:hover{
+    transform: scale(1.1);
+    transition: 100ms;
+}
+.indique{
+    margin: 0 auto;
+}
+
+.spinner{
+    width: 100px;
+    height: 100px;
+    
 }

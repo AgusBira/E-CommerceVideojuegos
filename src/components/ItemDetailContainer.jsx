@@ -5,6 +5,7 @@ import "./ItemDetailContainer.css"
 import { cartContext, CartProvider } from "../context/CartContext"
 import { getProducts } from "../firebase/firebase"
 import { Spinner } from 'reactstrap';
+import { Link } from "react-router-dom"
 export default function ItemDetailContainer() {
   const [cart, setCart, addItem] = useContext(cartContext)
   let [loading, setLoading] = useState(true)
@@ -36,31 +37,32 @@ export default function ItemDetailContainer() {
     }
   }
   return (
-    <section>
-      {loading ?  <Spinner color="light" className="spinner" ></Spinner> : 
+    <section className="containerProductDetail">
+      <Link to="/"><img className="imagenflecha" src="/flecha-hacia-la-izquierda.png" alt="" /></Link>
+      {loading ?  <Spinner color="black" className="spinner" ></Spinner> : 
       <article className="productDetail">
         <div className="portadaJuego">
           <img src={product?.rutaimg} alt="" />
         </div>
         <div className="infoProducto">
-        <div >
+          <div >
           <h2>{product?.nombre}</h2>
             <div className="infoProducto-consolastock">
               <p className="console">{product?.console}</p>
-              <p>Stock disponible: {product.stock}</p>
+              <p className="stock">Stock disponible: {product.stock}</p>
             </div>
-        </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quam debitis ut eveniet eos, praesentium hic minima sequi molestias, unde aliquam minus nihil delectus quod numquam. Porro blanditiis voluptatum rem!</p>
+          </div>
+          <p className="infoproducto-description">{product.description}</p>
           <h3>${product?.precio}</h3>
           <div className="ItemCounter">
             <button onClick={decrement}>-</button>
-            <input type="text" value={count} />
+            <input type="text" value={count} readonly/>
             <button onClick={increment}>+</button>
           </div>
 
           {count >= 1 ?<div className="agregarAlCarrito">
             <button onClick={handleClick}>Agregar al Carrito</button>
-          </div>: <p>Indique la cantidad</p>
+          </div>: <p className="indique">Indique la cantidad</p>
           }
         </div>
       </article>}
