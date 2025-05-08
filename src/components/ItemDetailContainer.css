@@ -1,170 +1,163 @@
-
-.containerProductDetail{
+.containerProductDetail {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
-.productDetail{
-    padding: 20px;
-background-color:#D0D4C8;
+
+.productDetail {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+    background-color: #D0D4C8;
     color: rgb(86, 86, 86);
 }
 
-
-.productDetail h3{
+.productDetail h3, 
+.productDetail .infoProducto h2 {
     font-size: 5rem;
     margin: 0 auto;
 }
-.productDetail p{
+
+.productDetail p {
     color: rgb(75, 74, 74);
 }
 
-.productDetail .infoproducto-description{
-    width: 400px;
-
-}
-.productDetail img{
+.productDetail img {
     width: 25%;
 }
-.productDetail .agregarAlCarrito {
-    margin: 0 auto;
-    text-align: center;
-    gap: 10px;
-    
-}
-.productDetail .agregarAlCarrito button{
-    border: none;
-    width: 200px;
-    height: 50px;
-    margin-top: 20px;
-    background-color: rgba(36, 33, 7, 0.133);
 
-    color: black;
-    border-radius: 10px;
-    transition: 100ms;
-}
-.productDetail .agregarAlCarrito button:hover{
-    transform: scale(1.05);
-    box-shadow: 4px 4px 0px black;
-    transition: 100ms;
-}
-.productDetail .agregarAlCarrito button:active{
-    box-shadow: 4px 4px 0px black;
-    transform: scale(1);
-    box-shadow: 2px 2px 0px black;
-    color: black;
-    transition: 100ms;
-    background-color: #39d5c3;
-}
-.productDetail .portadaJuego{
+.productDetail .portadaJuego {
     width: 500px;
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
 }
-.productDetail .portadaJuego img{
-    width: 100%;
 
+.productDetail .portadaJuego img {
+    width: 100%;
 }
-.productDetail .infoProducto{
-    padding: 20px;
+
+.productDetail .infoproducto-description {
+    width: 400px;
+}
+
+.productDetail .infoProducto {
     width: 600px;
     height: 700px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;  
-    align-items: start;
+    justify-content: space-around;
+    align-items: flex-start;
     gap: 10px;
-
 }
 
-.infoProducto-consolastock{
+.infoProducto-consolastock {
     display: flex;
-    align-items: center ;
+    align-items: center;
     gap: 50px;
 }
 
-.stock{
+.stock {
     font-size: 1.5rem;
 }
-.productDetail .infoProducto h2{
-    font-size: 5rem;
+
+.agregarAlCarrito {
+    margin: 0 auto;
+    text-align: center;
+    gap: 10px;
 }
 
-.ItemCounter{
+.agregarAlCarrito button {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(36, 33, 7, 0.133);
+    color: black;
+    transition: 100ms;
+}
+
+.agregarAlCarrito button:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 0px black;
+}
+
+.agregarAlCarrito button:active {
+    transform: scale(1);
+    box-shadow: 2px 2px 0px black;
+    background-color: #39d5c3;
+}
+
+.ItemCounter {
     display: flex;
     gap: 10px;
     margin: 0 auto;
 }
-.ItemCounter input{
+
+.ItemCounter input {
+    width: 100px;
     font-size: 1.5rem;
     text-align: center;
+    border: 1px solid black;
 }
-.ItemCounter button{
+
+.ItemCounter input:focus {
+    outline: none;
+}
+
+.ItemCounter button {
     width: 50px;
     height: 50px;
-    font-size:2rem;
+    font-size: 2rem;
     background-color: #1212;
     border: 2px solid black;
-    color: black;
     border-radius: 50%;
+    color: black;
+    transition: 100ms;
     text-align: center;
-    transition: 100ms;
 }
-.ItemCounter button:hover{
+
+.ItemCounter button:hover {
     transform: scale(1.1);
-
-    transition: 100ms;
 }
-.ItemCounter button:active{
-    background-color: #39d5c3;
+
+.ItemCounter button:active {
     transform: scale(1);
-    transition: 100ms;
+    background-color: #39d5c3;
 }
-.ItemCounter input{
-    border: 1px solid black;
-    width: 100px;
-}
-.ItemCounter input:focus{
-    outline: none;
-    
 
-}
-.console{
+.console {
     border: solid;
     border-radius: 20px;
     padding: 5px;
 }
 
-.imagenflecha{
-    margin: 50px;
+.imagenflecha {
     width: 50px;
     height: 50px;
+    margin: 50px;
     position: absolute;
     top: 1%;
     left: 1%;
     cursor: pointer;
-    transition: 100ms;
     border: none;
-
-}
-.imagenflecha:hover{
-    transform: scale(1.1);
     transition: 100ms;
 }
-.indique{
+
+.imagenflecha:hover {
+    transform: scale(1.1);
+}
+
+.indique {
     margin: 0 auto;
 }
 
-.spinner{
+.spinner {
     width: 100px;
     height: 100px;
-    
 }
